@@ -5,10 +5,10 @@ fs = require('fs')
 
 module.exports =
   activate: ->
-    atom.commands.add 'atom-workspace', 'open-in-cmd:open', => @open_in_cmd()
-    atom.commands.add '.tree-view .selected', 'open-in-cmd:open_path' : (event) => @open_in_cmd(event.currentTarget)
+    atom.commands.add 'atom-workspace', 'open-in-cmder:open', => @open_in_cmd()
+    atom.commands.add '.tree-view .selected', 'open-in-cmder:open_path' : (event) => @open_in_cmder(event.currentTarget)
 
-  open_in_cmd: (target) ->
+  open_in_cmder: (target) ->
     if target?
       select_file = target.getPath?() ? target.item?.getPath() ? target
     else
@@ -20,4 +20,4 @@ module.exports =
     else
       dir_path = select_file
 
-    exec "start cmd /k \"cd \"#{dir_path}\"\""
+    exec "start cmder /START \"#{dir_path}\""

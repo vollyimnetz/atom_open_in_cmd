@@ -1,21 +1,25 @@
 {
-  "name": "open_in_cmd",
+  "name": "open_in_cmder",
   "main": "./lib/code",
-  "version": "0.6.0",
-  "description": "Allow user to open a CMD from current directory in Atom tree-view or editor.",
+  "version": "0.1.0",
+  "description": "Allow user to open a CMDER from current directory in Atom tree-view or editor.",
   "keywords": [
-    "cmd",
+    "cmder",
     "command",
     "windows"
   ],
   "activationCommands": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lmatt-bit/atom_open_in_cmd"
+    "url": "git+https://github.com/vollyimnetz/atom_open_in_cmd.git"
   },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "readme": "# Open in CMDER\n\nThanks to lmatt-bit \n\nThanks to ziyasal's [open-conemu-here](https://github.com/ziyasal/atom-open-conemu-here), I can create \"open_in_cmd\" package. With \"open_in_cmd\", User can open a CMD in Atom directly from tree-view & editor.  \n\nNote: This package is only enabled on Windows, that's why \"CMDER\" is used.\n\n##License\nMIT License\n",
+  "readmeFilename": "README.md",
+  "bugs": {},
+  "homepage": "https://github.com/vollyimnetz/atom_open_in_cmd#readme"
 }
